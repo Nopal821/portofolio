@@ -1,13 +1,6 @@
 body {
     background-color: #2f4550;
 }
-ul {
-    list-style-type: none;
-    margin: 16px 32px;
-    overflow: hidden;
-}
-
-li  {
-    float: right;
-
+p.dotted {
+    border-style: dotted;
 }
