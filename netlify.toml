@@ -1,19 +1,18 @@
-# netlify.toml example
+# netlify.toml
 
 # Build settings
 [build]
-  command = "npm run build" # Ganti dengan perintah build yang sesuai dengan proyek Anda
-  publish = "dist"          # Ganti dengan direktori tempat file build hasilnya
+  command = "npm run build"  # Change this to your build command
+  publish = "dist"           # Change this to your build output directory
 
-# Redirects settings
+# Redirects settings (optional, adjust as needed)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-# Headers settings
+# Headers settings (optional, adjust as needed)
 [[headers]]
-  # Define headers for all paths under "/*"
   for = "/*"
     [headers.values]
     X-Frame-Options = "DENY"
